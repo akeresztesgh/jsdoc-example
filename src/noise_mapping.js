@@ -140,9 +140,9 @@ var noiseMapper = tiled.registerAction("Noise Mapping", function(action) {
                 if (height < min) min = height;
                 console.log(height);
                 if(height < 0.5) {
-                    layer.setTile(x, y, tileset.tile(0))
-                } else {
                     layer.setTile(x, y, tileset.tile(2))
+                } else {
+                    layer.setTile(x, y, tileset.tile(0))
                 }
             }
         }
@@ -155,9 +155,9 @@ var noiseMapper = tiled.registerAction("Noise Mapping", function(action) {
                 if (height > max) max = height;
                 if (height < min) min = height;
                 if(height < 0.0) {
-                    layer.setTile(x, y, tileset.tile(0))
-                } else {
                     layer.setTile(x, y, tileset.tile(2))
+                } else {
+                    layer.setTile(x, y, tileset.tile(0))
                 }
             }
         }        
